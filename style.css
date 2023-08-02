@@ -290,11 +290,26 @@ span.right {
   background-size: cover !important;
   text-align: center;
 }
+#header-2 {
+  background-image: url(Images/bg-header-about-us.jpg);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  text-align: center;
+  background-position: bottom center;
+  padding: 75px 0;
+}
 .orderAndWelcome h4 {
   color: #ffc139;
   font-size: 20px;
   padding-top: 80px;
   padding-bottom: 10px;
+}
+.about-foodBuzz h3{
+    color: #d60231;
+  
+}
+.about-foodBuzz span:nth-child(odd){
+  color: #d60231;
 }
 .orderAndWelcome h1 {
   color: #d60231;
@@ -1143,6 +1158,9 @@ span.right {
     line-height: 85px;
   }
   #header {
+    padding: 150px 0;
+  }
+  #header-2{
     padding: 150px 0;
   }
   .about-r {
