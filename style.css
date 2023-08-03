@@ -551,6 +551,9 @@ h1 {
   margin: 15px auto;
   border-radius: 10px;
 }
+.article-menuCard{
+  box-shadow: 0 0 10px rgba(136, 136, 136, 0.1);
+}
 .last-article {
   margin-bottom: 100px;
 }
@@ -591,6 +594,19 @@ h1 {
 .foods-items {
   text-align: center;
 }
+#foods-item .section{
+  /* background-color: #362725; */
+  text-align: center;
+  margin: 100px auto;
+}
+#foods-item .logo-s-food img{
+  /* width: 500px; */
+  width: 100%
+}
+#foods-item .logo-s-food{
+  max-width: 1170px;
+  margin: 0 auto;
+}
 .foods-items h3 {
   color: #d60231;
   font-size: 30px;
@@ -608,6 +624,20 @@ h1 {
   background-size: cover;
   background-attachment: fixed;
   padding: 120px 0;
+}
+#foods-item{
+  background-color: #ffffff;
+}
+
+#London input{
+  background-color: #d60231;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 .tab {
   display: flex;
