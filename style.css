@@ -360,6 +360,21 @@ span.right {
   margin: 0 auto;
   padding: 100px 0;
 }
+.history-2{
+  background-image: url(Images/bg-image-404.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  /* padding: 70px 0 !important; */
+
+}
+.history-2 .section{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.history-2 .abour-r{
+  /* text-align: left !important; */
+}
 #header-3 {
   background-color: #f7f1e9;
   /* max-width: 1200px; */
@@ -413,12 +428,25 @@ span.right {
   text-align: center;
   padding-top: 70px;
 }
+.histori-logo-2{
+  margin-bottom: 40px;
+}
 .histori-logo img {
   max-width: 100%;
   /* display: block; */
 }
 .about-r {
   text-align: center;
+}
+.about-r2{
+  text-align: left;
+}
+.about-r2 h1{
+  color: #d60231 !important;
+}
+.about-r2 h2{
+  color: black !important;
+  font-size: 28px;
 }
 .about-r h2 {
   color: #d60231;
@@ -447,6 +475,11 @@ span.right {
   margin: 10px;
   margin-top: 40px;
   margin-bottom: 50px;
+}
+.get-2{
+  background: #d60231;
+  color: white;
+  margin-left: 0px;
 }
 .get-dir-2 {
   background-color: #fff;
@@ -519,10 +552,7 @@ span.right {
 .article p.rate span i{
     margin: 0 2px;
 }
-.section {
-    /* background-color: #6f9a37; */
-    /* padding-bottom: 200px; */
-}
+
 .article {
   text-align: center !important;
   max-width: 570px;
@@ -1058,6 +1088,14 @@ span.right {
       width: 50px;
       padding: 10px 0;
     }
+    .about-r2 h1{
+      color: #d60231 !important;
+      font-size: 48px;
+    }
+    .about-r2 h2{
+      color: black !important;
+      font-size: 36px;
+    }
 }
 @media screen and (min-width: 768px){
     .online-table .Reservation{
@@ -1304,6 +1342,9 @@ span.right {
 @media screen and (min-width: 1200px) {
   #history {
     padding: 100px 0;
+  }
+  .history-2{
+    padding: 80px 0;
   }
   #header-3{
     padding: 70px 0;
