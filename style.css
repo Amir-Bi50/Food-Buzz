@@ -554,6 +554,9 @@ h1 {
 .article-menuCard{
   box-shadow: 0 0 10px rgba(136, 136, 136, 0.1);
 }
+.article-menuCard3{
+  box-shadow: 0 0 10px rgba(136, 136, 136, 0.1)
+}
 .last-article {
   margin-bottom: 100px;
 }
@@ -627,6 +630,18 @@ h1 {
 }
 #foods-item{
   background-color: #ffffff;
+}
+.foods-item-2{
+  background-color: #fafafa !important;
+}
+.foods-item-2 .section{
+  /* background-color: #362725; */
+  text-align: center;
+  margin: 0px auto !important;
+  padding-top: 100px;
+}
+.foods-item-2 .section:nth-child(4){
+  padding-bottom: 100px;
 }
 
 #London input{
