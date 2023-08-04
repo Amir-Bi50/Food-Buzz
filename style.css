@@ -979,6 +979,13 @@ p.chiken {
   padding: 80px 0;
   text-align: center;
 }
+.blog-post-1 .section{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.blog-post-1 .article-3{
+  width: 370px;
+}
 
 .blog-post h3 {
   color: #d60231;
@@ -1108,6 +1115,34 @@ p.chiken {
   position: fixed;
   bottom: 10px;
   right: 10px;
+}
+.numbers{
+  display: flex;
+  justify-content: center;
+  /* background-color: #262626; */
+  max-width: 1200px;
+  margin: 50px auto;
+  margin-bottom: 0px;
+}
+.numbers span{
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  color: #767676;
+  box-shadow: 0 3px 4px rgba(10, 31, 68, 0.1);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin: 0 5px;
+  
+}
+.numbers .dot{
+  background-color: transparent !important;
+  box-shadow: none;
+  font-weight: bold;
 }
 
 /* ---------------------------------- */
