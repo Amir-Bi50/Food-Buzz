@@ -602,6 +602,9 @@ h1 {
   text-align: center;
   margin: 100px auto;
 }
+.foodsItem-cardMenu3 .section{
+  max-width: 1300px;
+}
 #foods-item .logo-s-food img{
   /* width: 500px; */
   width: 100%
@@ -701,8 +704,68 @@ h1 {
   border-top: none;
   max-width: 1170px;
   margin: 0 auto;
-  /* background: red; */
+  /* background: #fdeaee; */  
 }
+.tabcontent-2{
+  background: #d8f6eb;
+  padding: 10px 5px;
+  padding-bottom: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.tabcontent-2-1{
+  background-color: #fdeaee;
+  padding: 10px 5px;
+  padding-bottom: 5px;
+  max-width: 600px;
+margin: 0 auto;
+}
+.tabcontent-2-2{
+  padding: 10px 5px;
+  padding-bottom: 5px;
+  background-color: #ffeed0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.tabcontent-2-3{
+  padding: 10px 5px;
+  padding-bottom: 5px;
+  background-color: #dfcdf9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.tabcontent-2-3 .img-menus{
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.tabcontent-2-2 .img-menus{
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.tabcontent-2-1 .img-menus{
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.tabcontent-2 .img-menus{
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.tabcontent-2-3 .img-menus img{
+  width: 100%;
+} 
+.tabcontent-2-1 .img-menus img{
+  width: 100%;
+} 
+.tabcontent-2-2 .img-menus img{
+  width: 100%;
+} 
+.tabcontent-2 .img-menus img{
+  width: 100%;
+} 
 .article-2 .image {
   overflow: hidden;
   position: relative;
