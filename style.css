@@ -522,6 +522,7 @@ h1 {
   background-color: #ffffff;
   margin: 15px auto;
   border-radius: 10px;
+  transition: all 0.3s ease;
 }
 .article-menuCard {
   box-shadow: 0 0 10px rgba(136, 136, 136, 0.1);
@@ -560,6 +561,9 @@ h1 {
   background-color: white;
   color: #d60231;
   border-color: #d60231;
+}
+.article:hover{
+  transform: translateY(-5px);
 }
 
 .article h4 {
@@ -2005,6 +2009,7 @@ p {
   .menu .row .menus #menus > li.item:hover .submenus {
     opacity: 1;
     visibility: visible;
+    transition: all 0.3s ease;
   }
   .menu .row .menus #menus > li .submenus {
     display: flex;
@@ -2055,6 +2060,9 @@ p {
     background: #d60231;
     /* padding: 10px; */
     color: #fff;
+  }
+  .second-menu .s-menu span i{
+    margin-right: 5px;
   }
   .s-menu {
     display: flex;
