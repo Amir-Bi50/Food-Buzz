@@ -2239,12 +2239,15 @@ text-align: left !important;
     /* padding: 10px 0; */
   }
   .s-menu span {
-    border-left: 1px solid #e5e5e56b;
-    border-right: 1px solid #e5e5e56b;
+    border-left: 1px solid #ffffff42;
+    /* border-right: 1px solid #ffffff42; */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 18px;
+    padding: 15px 15px;
+  }
+  .s-menu span:last-child{
+    border-right: 1px solid #ffffff42;
   }
   #header-3 h2 {
     color: black;
