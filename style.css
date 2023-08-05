@@ -192,13 +192,14 @@ a {
 .evano {
   /* background-color: aliceblue; */
   padding: 15px 10px;
+  width: 160px;
+  /* height: 20px; */
 }
 .evano img {
-  width: 120px;
-  height: 25px;
+  width: 100%;
 }
 .buy-now {
-  width: 110px;
+  width: 130px;
   height: 55px;
   /* background-color: antiquewhite; */
   display: flex;
@@ -212,7 +213,7 @@ a {
   width: 90px;
   height: 31px;
   color: white;
-  background-color: #79aa39;
+  background-color: #82b440;
   border-radius: 4px;
   box-shadow: 0 2px 0 #6f9a37;
   font-size: 14px;
