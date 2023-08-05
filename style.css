@@ -2238,7 +2238,7 @@ text-align: left !important;
     justify-content: center;
     /* padding: 10px 0; */
   }
-  .s-menu span {
+  .second-menu .s-menu span {
     border-left: 1px solid #ffffff42;
     /* border-right: 1px solid #ffffff42; */
     display: flex;
@@ -2246,7 +2246,7 @@ text-align: left !important;
     align-items: center;
     padding: 15px 15px;
   }
-  .s-menu span:last-child{
+  .second-menu .s-menu span:last-child{
     border-right: 1px solid #ffffff42;
   }
   #header-3 h2 {
