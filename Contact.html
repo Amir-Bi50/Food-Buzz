@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="grids.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css" />
+    <script src="jquery.js"></script>
+    <script>
+        $(function () {
+            // $("#menu ul").slideToggle();
+            $(".Btn-1").click(function () {
+                $("#menu ul").slideToggle();
+                // $("#cats").css("right", "-300px");
+            });
+
+            $(".item-1").click(function () {
+                $(".submenus-1").slideToggle();
+                // $("#cats").css("right", "-300px");
+            });
+
+            $(".item-2").click(function () {
+                $(".submenus-2").slideToggle();
+                // $("#cats").css("right", "-300px");
+            });
+
+            $(".item-3").click(function () {
+                $(".submenus-3").slideToggle();
+                // $("#cats").css("right", "-300px");
+            });
+
+            $(".item-4").click(function () {
+                $(".submenus-4").slideToggle();
+                // $("#cats").css("right", "-300px");
+            });
+
+            $(".button2").click(function () {
+                if ($("#cats").css("right") == "-300px") {
+                    $("#cats").css("right", "0");
+                    $("#header #nav").slideUp();
+                } else {
+                    $("#cats").css("right", "-300px");
+                }
+            });
+
+            $("#cats .plus").click(function (event) {
+                $(this).parent().siblings("ul").slideToggle();
+                event.preventDefault();
+            });
+
+            $(window).resize(function () {
+                if ($("#cats").css("width") != "300px") {
+                    $("#cats .submenu").slideUp();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="top-menu">
+        <div class="wrapper">
+            <div class="row">
+                <div class="market">
+                    <div class="evano">
+                        <img src="Images/envatoMarket.png" alt="" />
+                    </div>
+                    <div class="buy-now">
+                        <a href="#">Buy now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
