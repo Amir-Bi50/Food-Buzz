@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="grids.css" />
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="jquery.js"></script>
     <script>
         $(function () {
@@ -61,19 +63,27 @@
             });
         });
     </script>
+  
 </head>
+
 <body>
+
+    <div class="loading">
+        <div class="loading-circle">
+
+        </div>
+    </div>
+
+    <!-- //////////////// -->
     <span id="top"></span>
     <div id="top-menu">
-        <div class="wrapper">
-            <div class="row">
-                <div class="market">
-                    <div class="evano">
-                        <img src="Images/envatoMarket.png" alt="" />
-                    </div>
-                    <div class="buy-now">
-                        <a href="#">Buy now</a>
-                    </div>
+        <div class="row">
+            <div class="market">
+                <div class="evano">
+                    <img src="Images/envatoMarket.png" alt="" />
+                </div>
+                <div class="buy-now">
+                    <a href="#">Buy now</a>
                 </div>
             </div>
         </div>
@@ -83,7 +93,8 @@
             <div class="row">
                 <div class="s-menu">
                     <span><i class="fa-regular fa-clock fa-sm"></i> Sun-Fri: 9am-6pm Saterday Closed </span>
-                    <span style="color: #fefdfd;"><i class="fa-solid fa-location-dot fa-sm"></i> 60/A Soft Road 24th Street, NY 1200</span>
+                    <span style="color: #fefdfd;"><i class="fa-solid fa-location-dot fa-sm"></i> 60/A Soft Road 24th
+                        Street, NY 1200</span>
                     <span><i class="fa-solid fa-headset fa-sm"></i> Support@foodbuzz.com </span>
                     <span><i class="fab fa-twitter"></i></span>
                     <span><i class="fa-brands fa-vimeo-v fa-sm"></i></span>
@@ -162,12 +173,12 @@
                     <h2>It's The Food You Love</h2>
                     <h3>Best For Restaurant Wordpress Theme</h3>
                     <div class="form">
-                        
+
                         <!-- <input class="btn-one" type="button" value="Order Now" /> -->
                         <!-- <input class="btn-two" type="button" value="Book A Table" /> -->
                         <a href="#" class="btn-header btn-one"><span>Order Now</span></a>
                         <a href="Reservation.html" class="btn-header btn-two"><span>Book A Table</span></a>
-                        
+
                     </div>
                 </div>
             </div>
@@ -176,20 +187,22 @@
     <div id="history">
         <div class="wrapper">
             <div class="row">
-                <div class="col-xs-12 col-md-6 histori-logo">
-                    <img src="Images/history-bg.png" alt="" />
-                </div>
-                <div class="col-xs-12 col-md-6 about-r">
-                    <h2>Welcome FoodBuzz</h2>
-                    <h1>About Restaurant History!</h1>
-                    <span>Synergistca conceptualize leveraged inte ectual capital through virtual and the a and
-                        Proactiviely initiate lrisk highyield a platforms after realtme froms growth that awesome
-                        tently matrix robusti method powerm foistcky Sytical concepta leved ntelectua anding capita
-                        hrough virtua nteectua that capta the and Proactiviely initiate low risk highyield platforms
-                        after realtme froms that there andin Proctive initate low risk high yeld platform aftering
-                        Conven iterate optimal paradigms reliable techno
-                    </span>
-                    <input class="get-dir" type="button" value="get diraction" />
+                <div class="section">
+                    <div class="col-xs-12 col-md-6 histori-logo">
+                        <img src="Images/history-bg.png" alt="" />
+                    </div>
+                    <div class="col-xs-12 col-md-6 about-r">
+                        <span>Welcome FoodBuzz</span>
+                        <h3>About Restaurant History!</h3>
+                        <p>Synergistca conceptualize leveraged inte ectual capital through virtual and the a and
+                            Proactiviely initiate lrisk highyield a platforms after realtme froms growth that awesome
+                            tently matrix robusti method powerm foistcky Sytical concepta leved ntelectua anding capita
+                            hrough virtua nteectua that capta the and Proactiviely initiate low risk highyield platforms
+                            after realtme froms that there andin Proctive initate low risk high yeld platform aftering
+                            Conven iterate optimal paradigms reliable techno
+                        </p>
+                        <a href="Reservation.html" class="btn-header btn-two"><span>Book A Table</span></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -993,22 +1006,24 @@
                     <h3>Book a Online Table</h3>
                     <h1>Reservation Choose Your Table</h1>
                     <div class="Reservation">
-                        <div class="bg-table">
-                            <img src="Images/bg-table.png" alt="">
+                        <div class="col-xs-12 col-md-6">
+                            <div class="bg-table">
+                            </div>
                         </div>
-                        <div class="form-table">
-                            <div class="form1">
-                                <div class="form-2">
-                                    <div>
-                                        <input type="text" placeholder="Full Name*">
-                                    </div>
-                                    <div>
-                                        <input type="email" placeholder="Your Email*">
-                                    </div>
-                                    <div>
-                                        <input type="number" placeholder="Phone Number">
-                                    </div>
-                                    <div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="form-table">
+                                <form>
+
+
+                                    <input type="text" placeholder="Full Name*">
+
+
+                                    <input type="email" placeholder="Your Email*">
+
+
+                                    <input type="text" placeholder="Phone Number">
+
+                                    <div class="result-t">
                                         <select class="select" name="" id="">
                                             <option value="">Enter Time</option>
                                             <option value="">10:00 AM</option>
@@ -1021,7 +1036,8 @@
                                             <option value="">05:00 PM</option>
                                         </select>
                                     </div>
-                                    <div>
+
+                                    <div class="result-t">
                                         <select class="select" name="" id="">
                                             <option value="">Table Size</option>
                                             <option value="">10:00 AM</option>
@@ -1034,14 +1050,11 @@
                                             <option value="">05:00 PM</option>
                                         </select>
                                     </div>
+
                                     <input type="date">
-                                </div>
-                                <div>
                                     <textarea name="" id="" cols="46" rows="7" placeholder="Message"></textarea>
-                                </div>
-                                <div>
-                                    <input class="Book-Table" type="button" value="Book A Table">
-                                </div>
+                                    <a href="Reservation.html" class="btn-header btn-two"><span>Book A Table</span></a>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -1065,12 +1078,23 @@
                             <div class="image">
                                 <img src="Images/chef01.jpg" alt="" />
                                 <div class="right-follow-me">
-                                    <span><img src="Images/chef01.png" alt=""></span>
-                                    <span class="icon-right"><i class="fa-brands fa-twitter fa-xs"
-                                            style="color: #0080ff;"></i></span>
-                                    <span><i class="fa-brands fa-instagram fa-xs" style="color: #ff0000;"></i></span>
-                                    <span><i class="fa-brands fa-vimeo-v fa-xs" style="color: #00366c;"></i></span>
-                                    <span><i class="fa-solid fa-basketball fa-xs" style="color: #ff8080;"></i></span>
+                                    <div class="head-follow">
+                                        <span>Follow Me</span>
+                                    </div>
+                                    <div class="icon-follow">
+                                        <ul>
+                                            <li><a href="#" class="facebook"><i class="fa-brands fa-vimeo-v fa-xs"
+                                                        style="color: #00366c;"></i></a></li>
+                                            <li><a href="#" class="pinterest"><i class="fa-brands fa-instagram fa-xs"
+                                                        style="color: #ff0000;"></i></a></li>
+                                            <li><a href="#" class="twitter"><i class="fa-brands fa-twitter fa-xs"
+                                                        style="color: #0080ff;"></i></a></li>
+                                            <li><a href="#" class="globe"><i class="fa-solid fa-basketball fa-xs"
+                                                        style="color: #ff8080;"></i></a></li>
+                                        </ul>
+                                    </div>
+
+
                                 </div>
                             </div>
                             <a href="#">Zinnat Zara</a>
@@ -1099,12 +1123,23 @@
                             <div class="image">
                                 <img src="Images/chef02.jpg" alt="" />
                                 <div class="right-follow-me">
-                                    <span><img src="Images/chef03.png" alt=""></span>
-                                    <span class="icon-right"><i class="fa-brands fa-twitter fa-xs"
-                                            style="color: #0080ff;"></i></span>
-                                    <span><i class="fa-brands fa-instagram fa-xs" style="color: #ff0000;"></i></span>
-                                    <span><i class="fa-brands fa-vimeo-v fa-xs" style="color: #00366c;"></i></span>
-                                    <span><i class="fa-solid fa-basketball fa-xs" style="color: #ff8080;"></i></span>
+                                    <div class="head-follow head-2">
+                                        <span>Follow Me</span>
+                                    </div>
+                                    <div class="icon-follow">
+                                        <ul>
+                                            <li><a href="#" class="facebook"><i class="fa-brands fa-vimeo-v fa-xs"
+                                                        style="color: #00366c;"></i></a></li>
+                                            <li><a href="#" class="pinterest"><i class="fa-brands fa-instagram fa-xs"
+                                                        style="color: #ff0000;"></i></a></li>
+                                            <li><a href="#" class="twitter"><i class="fa-brands fa-twitter fa-xs"
+                                                        style="color: #0080ff;"></i></a></li>
+                                            <li><a href="#" class="globe"><i class="fa-solid fa-basketball fa-xs"
+                                                        style="color: #ff8080;"></i></a></li>
+                                        </ul>
+                                    </div>
+
+
                                 </div>
                             </div>
                             <a href="#">Tom Holland</a>
@@ -1133,12 +1168,23 @@
                             <div class="image">
                                 <img src="Images/chef01.jpg" alt="" />
                                 <div class="right-follow-me">
-                                    <span><img src="Images/chef02.png" alt=""></span>
-                                    <span class="icon-right"><i class="fa-brands fa-twitter fa-xs"
-                                            style="color: #0080ff;"></i></span>
-                                    <span><i class="fa-brands fa-instagram fa-xs" style="color: #ff0000;"></i></span>
-                                    <span><i class="fa-brands fa-vimeo-v fa-xs" style="color: #00366c;"></i></span>
-                                    <span><i class="fa-solid fa-basketball fa-xs" style="color: #ff8080;"></i></span>
+                                    <div class="head-follow head-3">
+                                        <span>Follow Me</span>
+                                    </div>
+                                    <div class="icon-follow">
+                                        <ul>
+                                            <li><a href="#" class="facebook"><i class="fa-brands fa-vimeo-v fa-xs"
+                                                        style="color: #00366c;"></i></a></li>
+                                            <li><a href="#" class="pinterest"><i class="fa-brands fa-instagram fa-xs"
+                                                        style="color: #ff0000;"></i></a></li>
+                                            <li><a href="#" class="twitter"><i class="fa-brands fa-twitter fa-xs"
+                                                        style="color: #0080ff;"></i></a></li>
+                                            <li><a href="#" class="globe"><i class="fa-solid fa-basketball fa-xs"
+                                                        style="color: #ff8080;"></i></a></li>
+                                        </ul>
+                                    </div>
+
+
                                 </div>
                             </div>
                             <a href="#">Zarina Wahab</a>
@@ -1179,7 +1225,7 @@
                     <div class="col-xs-12 col-sm-6 col-lg-4">
                         <div class="article article-3 post-1">
                             <div class="image">
-                                <img src="Images/bg-blog-post01.jpg" alt="" />
+                                <img src="Images/bg-blog-post03.jpg" alt="" />
                             </div>
                             <a href="#">Business Ueporting Rouncil Them Could Plan...</a>
                             <div class="date">
@@ -1223,7 +1269,7 @@
                     <div class="col-xs-12 col-sm-12 col-lg-4">
                         <div class="article article-3 post-1">
                             <div class="image">
-                                <img src="Images/bg-blog-post03.jpg" alt="" />
+                                <img src="Images/bg-blog-post01.jpg" alt="" />
                             </div>
                             <a href="#">Consulting Reporting Qounc Arei Could More...</a>
                             <div class="date">
@@ -1258,21 +1304,69 @@
                     </div>
                     <h4>Our Valuable Client</h4>
                     <h2>What People Say About us</h2>
-                    <div class="User-img">
-                        <img src="Images/user-img.png" alt="" />
+
+                    <div class="banner">
+
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="User-img">
+                                        <img src="Images/user-img.png" alt="" />
+                                    </div>
+                                    <p class="about-team">
+                                    <span class="quote"><i class="fa-solid fa-quote-left fa-xl"></i></span>
+                                        Proactivel expedite cost ectve andoportunties through aeconomical are creative a souncreative theme Enthusiastical maintain creative effective anifunctionalities Conveniently are creative anarecaptiualize Conveniently are creative theme for business anarecaptiualize
+                                        <span class="quote"><i class="fa-sharp fa-solid fa-quote-right fa-xl" style="color: #fff;"></i></span>
+                                        </p>
+                                    <p class="rate">
+                                        <span><i class="fa-sharp fa-solid fa-star fa-md" style="color: #e9ba17;"></i><i
+                                                class="fa-sharp fa-solid fa-star fa-md" style="color: #e9ba17;"></i><i
+                                                class="fa-sharp fa-solid fa-star fa-md" style="color: #e9ba17;"></i><i
+                                                class="fa-sharp fa-solid fa-star fa-md" style="color: #e9ba17;"></i><i class="fa-solid fa-star-half-stroke fa-md" style="color: #e9ba17;"></i>
+                                            </span>
+                                    </p>
+                                    <p class="manan-name name1">manan khan</p>
+                                    <p class="manan-name">Head Of Idea</p>
+                                </div>
+                                <div class="swiper-slide"><div class="User-img">
+                                    <img src="Images/user-comment2.jpg" alt="" />
+                                </div>
+                                <p class="about-team">
+                                    <span class="quote"><i class="fa-solid fa-quote-left fa-xl"></i></span>
+                                    Proactivel expedite cost ectve andoportunties through aeconomical are creative a souncreative theme Enthusiastical maintain creative effective anifunctionalities Conveniently are creative anarecaptiualize Conveniently are creative theme for business anarecaptiualize
+                                    <span class="quote"><i class="fa-sharp fa-solid fa-quote-right fa-xl" style="color: #fff;"></i></span>
+                                    </p>
+                                <p class="rate">
+                                    <span><i class="fa-sharp fa-solid fa-star fa-md" style="color: #e9ba17;"></i><i
+                                            class="fa-sharp fa-solid fa-star fa-md" style="color: #e9ba17;"></i><i
+                                            class="fa-sharp fa-solid fa-star fa-md" style="color: #e9ba17;"></i><i
+                                            class="fa-sharp fa-solid fa-star fa-md" style="color: #e9ba17;"></i><i class="fa-solid fa-star-half-stroke fa-md" style="color: #e9ba17;"></i>
+                                        </span>
+                                </p>
+                                <p class="manan-name name1">Subrina Kabir</p>
+                                <p class="manan-name">Lead Desiner</p></div>
+                                <div class="swiper-slide"><div class="User-img">
+                                    <img src="Images/user-comment1.jpg" alt="" />
+                                </div>
+                                <p class="about-team">
+                                    <span class="quote"><i class="fa-solid fa-quote-left fa-xl"></i></span>
+                                    Proactivel expedite cost ectve andoportunties through aeconomical are creative a souncreative theme Enthusiastical maintain creative effective anifunctionalities Conveniently are creative anarecaptiualize Conveniently are creative theme for business anarecaptiualize
+                                    <span class="quote"><i class="fa-sharp fa-solid fa-quote-right fa-xl" style="color: #fff;"></i></span>
+                                    </p>
+                                <p class="rate">
+                                    <span><i class="fa-sharp fa-solid fa-star fa-md" style="color: #e9ba17;"></i><i
+                                            class="fa-sharp fa-solid fa-star fa-md" style="color: #e9ba17;"></i><i
+                                            class="fa-sharp fa-solid fa-star fa-md" style="color: #e9ba17;"></i><i
+                                            class="fa-sharp fa-solid fa-star fa-md" style="color: #e9ba17;"></i><i class="fa-solid fa-star-half-stroke fa-md" style="color: #e9ba17;"></i>
+                                        </span>
+                                </p>
+                                <p class="manan-name name1">Zinnat Zaara</p>
+                                <p class="manan-name name2">Senior Ui / ux Desiner</p>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
-                    <p class="about-team">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates molestiae
-                        laboriosam veniam nLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-                        molestiaostrum labore sint nobis nemo neque perferendis iusto.</p>
-                    <p class="rate">
-                        <span><i class="fa-sharp fa-solid fa-star fa-xs" style="color: #e9ba17;"></i><i
-                                class="fa-sharp fa-solid fa-star fa-xs" style="color: #e9ba17;"></i><i
-                                class="fa-sharp fa-solid fa-star fa-xs" style="color: #e9ba17;"></i><i
-                                class="fa-sharp fa-solid fa-star fa-xs" style="color: #e9ba17;"></i><i
-                                class="fa-sharp fa-solid fa-star fa-xs" style="color: #e9ba17;"></i></span>
-                    </p>
-                    <p class="manan-name name1">manan khan</p>
-                    <p class="manan-name">Head Of Idea</p>
                 </div>
             </div>
         </div>
@@ -1281,14 +1375,56 @@
     <div class="ads">
         <div class="wrapper">
             <div class="row">
-                <div class="images">
+                <div class="swiper1 mySwiper1">
+                    <div class="swiper-wrapper1">
+
+                      <div class="swiper-slide1">
                     <img src="./Images/011.png" alt="" />
-                    <img src="./Images/022.png" alt="" />
-                    <img src="./Images/033.png" alt="" />
-                    <img src="./Images/044.png" alt="" />
-                    <img src="./Images/055.png" alt="" />
-                    <img src="./Images/011.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide1">
+                        <img src="./Images/022.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide1">
+                        <img src="./Images/033.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide1">
+                        <img src="./Images/044.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide1">
+                        <img src="./Images/055.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide1">
+                        <img src="./Images/011.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide1">
+                        <img src="./Images/011.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide1">
+                        <img src="./Images/022.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide1">
+                        <img src="./Images/011.png" alt="" />
+                      </div>
+
+                      <div class="swiper-slide1">
+                        <img src="./Images/011.png" alt="" />
+                      </div>
+
+                    </div>
+                    <div class="swiper-pagination">
+
+                    </div>
+
                 </div>
+
             </div>
         </div>
     </div>
@@ -1403,6 +1539,18 @@
     </footer>
     <a href="#top"><button class="top"><i class="fa-solid fa-arrow-up"></i></button></a>
     <script src="./tabs.js"></script>
+    <script src="./swiper.js"></script>
+
+
+
+
+
+
+    <script>
+        window.addEventListener("load",function(){
+            document.querySelector(".loading").classList.add("loaded");
+        });
+    </script>
 </body>
 
 </html>
