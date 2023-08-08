@@ -9,145 +9,169 @@
     <link rel="stylesheet" href="grids.css" />
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css" />
     <script src="jquery.js"></script>
-    <script>
-        $(function () {
-            // $("#menu ul").slideToggle();
-            $(".Btn-1").click(function () {
-                $("#menu ul").slideToggle();
-                // $("#cats").css("right", "-300px");
+        <!-- menu script -->
+        <script>
+            $(function () {
+                // $("#menu ul").slideToggle();
+                $(".Btn-1").click(function () {
+                    $("#menu ul").slideToggle();
+                    // $("#cats").css("right", "-300px");
+                });
+    
+                $(".item-1").click(function () {
+                    $(".submenus-1").slideToggle();
+                    // $("#cats").css("right", "-300px");
+                });
+    
+                $(".item-2").click(function () {
+                    $(".submenus-2").slideToggle();
+                    // $("#cats").css("right", "-300px");
+                });
+    
+                $(".item-3").click(function () {
+                    $(".submenus-3").slideToggle();
+                    // $("#cats").css("right", "-300px");
+                });
+    
+                $(".item-4").click(function () {
+                    $(".submenus-4").slideToggle();
+                    // $("#cats").css("right", "-300px");
+                });
+    
+                $(".button2").click(function () {
+                    if ($("#cats").css("right") == "-300px") {
+                        $("#cats").css("right", "0");
+                        $("#header #nav").slideUp();
+                    } else {
+                        $("#cats").css("right", "-300px");
+                    }
+                });
+    
+                $("#cats .plus").click(function (event) {
+                    $(this).parent().siblings("ul").slideToggle();
+                    event.preventDefault();
+                });
+    
+                $(window).resize(function () {
+                    if ($("#cats").css("width") != "300px") {
+                        $("#cats .submenu").slideUp();
+                    }
+                });
             });
-
-            $(".item-1").click(function () {
-                $(".submenus-1").slideToggle();
-                // $("#cats").css("right", "-300px");
-            });
-
-            $(".item-2").click(function () {
-                $(".submenus-2").slideToggle();
-                // $("#cats").css("right", "-300px");
-            });
-
-            $(".item-3").click(function () {
-                $(".submenus-3").slideToggle();
-                // $("#cats").css("right", "-300px");
-            });
-
-            $(".item-4").click(function () {
-                $(".submenus-4").slideToggle();
-                // $("#cats").css("right", "-300px");
-            });
-
-            $(".button2").click(function () {
-                if ($("#cats").css("right") == "-300px") {
-                    $("#cats").css("right", "0");
-                    $("#header #nav").slideUp();
-                } else {
-                    $("#cats").css("right", "-300px");
-                }
-            });
-
-            $("#cats .plus").click(function (event) {
-                $(this).parent().siblings("ul").slideToggle();
-                event.preventDefault();
-            });
-
-            $(window).resize(function () {
-                if ($("#cats").css("width") != "300px") {
-                    $("#cats .submenu").slideUp();
-                }
-            });
-        });
-    </script>
+        </script>
+        <!-- end of menu script -->
 </head>
 <body>
-    <span id="top"></span>
-    <div id="top-menu">
-        <div class="wrapper">
-            <div class="row">
-                <div class="market">
-                    <div class="evano">
-                        <img src="Images/envatoMarket.png" alt="" />
-                    </div>
-                    <div class="buy-now">
-                        <a href="#">Buy now</a>
-                    </div>
-                </div>
+
+    <!--loader-->
+    <div class="loading">
+        <div class="">
+            <i class="fa-solid fa-spinner fa-beat-fade fa-2xl" style="color: #ffffff;"></i>
+        </div>
+    </div>
+<!--end of loader-->
+
+
+<!-- top-buttom -->
+<span id="top"></span>
+<!-- end of top-buttom-->
+
+
+<!-- top-menu -->
+<div id="top-menu">
+    <div class="row">
+        <div class="market">
+            <div class="evano">
+                <img src="Images/envatoMarket.png" alt="" />
+            </div>
+            <div class="buy-now">
+                <a href="#">Buy now</a>
             </div>
         </div>
     </div>
+</div>
+<!-- end of top-menu -->
 
-    <div id="menu" class="menu">
-        <div class="wrapper">
-            <dv class="row">
-                <div class="logo">
-                    <img src="Images/FoodBuzz-Icon.png" alt="" />
-                </div>
-                <div class="menus">
-                    <ul id="menus">
-                        <li class="item"><a href="index.html">Home</a></li>
-                        <li class="item item-1">
-                            <a href="#">Pages <i class="fa-solid fa-chevron-up fa-rotate-180 fa-xs"></i></a>
-                            <ul class="submenus submenus-1">
-                                <li class="subitem"><a href="about-us.html">About Us</a></li>
-                                <li class="subitem"><a href="coming-soon.html">Coming Soon</a></li>
-                                <li class="subitem"><a href="404.html">404</a></li>
-                            </ul>
-                        </li>
-                        <li class="item item-2">
-                            <a href="#">Food Menu <i class="fa-solid fa-chevron-up fa-rotate-180 fa-xs"></i> </a>
-                            <ul class="submenus submenus-2">
-                                <li class="subitem"><a href="menu-card.html">Menu Card</a></li>
-                                <li class="subitem"><a href="menu-card-2.html">Menu Card 2</a></li>
-                                <li class="subitem"><a href="menu-card-3.html">Menu Card 3</a></li>
-                            </ul>
-                        </li>
-                        <li class="item"><a href="Reservation.html">Reservation</a></li>
-                        <li class="item item-3">
-                            <a href="#">Blog <i class="fa-solid fa-chevron-up fa-rotate-180 fa-xs"></i></a>
-                            <ul class="submenus submenus-3">
-                                <li class="subitem"><a href="BlogStyle-1.html">Blog Style 1</a></li>
-                                <li class="subitem"><a href="BlogStyle-2.html">Blog Style 2</a></li>
-                                <li class="subitem"><a href="BlogSingle.html">Blog Single</a></li>
-                            </ul>
-                        </li>
-                        <li class="item item-4">
-                            <a href="#">Shop <i class="fa-solid fa-chevron-up fa-rotate-180 fa-xs"></i></a>
-                            <ul class="submenus submenus-4">
-                                <li class="subitem"><a href="#">Shop Page</a></li>
-                                <li class="subitem"><a href="#">Shop Single</a></li>
-                                <li class="subitem"><a href="#">Cart Page</a></li>
-                            </ul>
-                        </li>
-                        <li class="item"><a href="Contact.html" class="last">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="tools">
-                    <div class="tool"><i class="fa-solid fa-magnifying-glass" style="color: #696969;"></i></div>
-                    <div class="tool"><i class="fa-solid fa-cart-shopping" style="color: #696969;"></i></div>
-                </div>
-            </dv>
-        </div>
-    </div>
-    <div class="btn menu-btn">
-        <!-- <div class="wrapper"> -->
-        <!-- <div class="row"> -->
-        <i class="fa-solid fa-bars fa-2xl Btn-1"></i>
-        <!-- </div> -->
-        <!-- </div> -->
-    </div>
 
-    <div id="header-2">
-        <div class="wrapper">
-            <div class="row">
-                <div class="orderAndWelcome about-foodBuzz">
-                    <!-- <h4>Welcome to our foodbuzz</h4> -->
-                    <h3>Our Best Food Menu</h3>
-                    <span>Home </span> - <span> Food Menu 1</span>
-                </div>
+<!-- menu -->
+<div id="menu" class="menu">
+    <div class="wrapper">
+        <dv class="row">
+            <div class="logo">
+                <img src="Images/FoodBuzz-Icon.png" alt="" />
+            </div>
+            <div class="menus">
+                <ul id="menus">
+                    <li class="item"><a href="index.html">Home</a></li>
+                    <li class="item item-1">
+                        <a href="#">Pages <i class="fa-solid fa-chevron-up fa-rotate-180 fa-xs"></i></a>
+                        <ul class="submenus submenus-1">
+                            <li class="subitem"><a href="about-us.html">About Us</a></li>
+                            <li class="subitem"><a href="coming-soon.html">Coming Soon</a></li>
+                            <li class="subitem"><a href="404.html">404</a></li>
+                        </ul>
+                    </li>
+                    <li class="item item-2">
+                        <a href="#">Food Menu <i class="fa-solid fa-chevron-up fa-rotate-180 fa-xs"></i> </a>
+                        <ul class="submenus submenus-2">
+                            <li class="subitem"><a href="menu-card.html">Menu Card</a></li>
+                            <li class="subitem"><a href="menu-card-2.html">Menu Card 2</a></li>
+                            <li class="subitem"><a href="menu-card-3.html">Menu Card 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="item"><a href="Reservation.html">Reservation</a></li>
+                    <li class="item item-3">
+                        <a href="#">Blog <i class="fa-solid fa-chevron-up fa-rotate-180 fa-xs"></i></a>
+                        <ul class="submenus submenus-3">
+                            <li class="subitem"><a href="BlogStyle-1.html">Blog Style 1</a></li>
+                            <li class="subitem"><a href="BlogStyle-2.html">Blog Style 2</a></li>
+                            <li class="subitem"><a href="BlogSingle.html">Blog Single</a></li>
+                        </ul>
+                    </li>
+                    <li class="item item-4">
+                        <a href="#">Shop <i class="fa-solid fa-chevron-up fa-rotate-180 fa-xs"></i></a>
+                        <ul class="submenus submenus-4">
+                            <li class="subitem"><a href="#">Shop Page</a></li>
+                            <li class="subitem"><a href="#">Shop Single</a></li>
+                            <li class="subitem"><a href="#">Cart Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="item"><a href="Contact.html" class="last">Contact</a></li>
+                </ul>
+            </div>
+            <div class="tools">
+                <div class="tool"><i class="fa-solid fa-magnifying-glass" style="color: #696969;"></i></div>
+                <div class="tool"><i class="fa-solid fa-cart-shopping" style="color: #696969;"></i></div>
+            </div>
+        </dv>
+    </div>
+</div>
+<div class="btn menu-btn">
+    <!-- <div class="wrapper"> -->
+    <!-- <div class="row"> -->
+    <i class="fa-solid fa-bars fa-2xl Btn-1"></i>
+    <!-- </div> -->
+    <!-- </div> -->
+</div>
+<!-- end of master menu-->
+
+
+<!-- header -->
+<div id="header-2">
+    <div class="wrapper">
+        <div class="row">
+            <div class="orderAndWelcome about-foodBuzz">
+                <!-- <h4>Welcome to our foodbuzz</h4> -->
+                <h3>About Our FoodBuzz</h3>
+                <span class="header2-span" style="color:black;">Home </span> - <span class="header2-span"> About</span>
             </div>
         </div>
     </div>
+</div>
+<!-- end of header -->
 
+
+<!-- foods-item -->
     <div class="" id="foods-item">
 
         <div class="wrapper">
@@ -401,7 +425,7 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="submit" value="LOAD MORE">
+                        <a href="" class="btn-header load-btn"><span>LOAD MORE</span></a>
                     </div>
 
                 </div>
@@ -653,7 +677,7 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="submit" value="LOAD MORE">
+                        <a href="" class="btn-header load-btn"><span>LOAD MORE</span></a>
                     </div>
 
                 </div>
@@ -905,7 +929,7 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="submit" value="LOAD MORE">
+                        <a href="" class="btn-header load-btn"><span>LOAD MORE</span></a>
                     </div>
                 </div>
 
@@ -1156,125 +1180,151 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="submit" value="LOAD MORE">
+                        <a href="" class="btn-header load-btn"><span>LOAD MORE</span></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+<!-- end of foods-item -->
 
 
-    <div class="news-ad">
-        <div class="wrapper">
-            <div class="row">
-                <div class="content">
-                    <div class="col-xs-12 col-sm-6 img-news">
-                        <img src="Images/ImagesFoodBuzz-Icon2.png" alt="">
-                        <h4>Good Food For Good Helts</h4>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 best-news">
-                        <span>Work with best resturant theme</span>
-                        <input type="button" value="ORDER NOW">
-                    </div>
-                </div>
+
+<!-- news-ad -->
+<div class="news-ad">
+    <div class="section">
+        <div class="content">
+            <div class="img-news">
+                <a href="#">
+                    <img src="Images/ImagesFoodBuzz-Icon2.png" alt="">
+                    <p>Good Food For Good Helts</p>
+                </a>
+            </div>
+            <div class="best-news">
+                <ul>
+                    <li>
+                        <h5>Work with best resturant theme</h5>
+                    </li>
+                    <li>
+                        <a href="#" class="btn-header btn-two btn-order-now">
+                            <span>ORDER NOW</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
+</div>
+<!-- end of news-ad -->
 
-    <footer>
+<!-- footer -->
+<footer>
 
-        <div class="main-wrapper">
-            <div class="main">
-                <div class="contact">
-                    <h4>Contact info</h4>
-                    <ul>
-                        <li>
-                            <div>
-                                <div class="icon"><i class="fa-solid fa-house"></i></div>
-                                <span>Suite 02 Level Tropical Center</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="icon"><i class="fa-solid fa-phone-flip"></i></div>
-                                <span>+880 1234 567890, 025984712</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="icon"><i class="fa-solid fa-earth-americas"></i></div>
-                                <span>www.foodbuzz@gmail.com</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="icon"><i class="fa-solid fa-headset"></i></div>
-                                <span>support@codexcoder.com</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="contact2">
-                    <h4>Opening Hours</h4>
-                    <ul>
-                        <li>
-                            <div>
-                                <div class="icon"><i class="fa-regular fa-clock"></i></div>
-                                <span>Saterday</span>
-                            </div>
-                            <span>06:00 am - 08:00 pm</span>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="icon"><i class="fa-regular fa-clock"></i></div>
-                                <span>Sunday</span>
-                            </div>
-                            <span>09:00 am - 02:00 pm</span>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="icon"><i class="fa-regular fa-clock"></i></div>
-                                <span>Monday</span>
-                            </div>
-                            <span>07:00 am - 09:00 pm</span>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="icon"><i class="fa-regular fa-clock"></i></div>
-                                <span>Tuesday</span>
-                            </div>
-                            <span>02:00 am - 06:00 pm</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="subscribe">
-                    <h3>Subscribe Newsletter</h3>
-                    <p>Sign Up For Our Latest News & Articles. We Wont Give You Spam Mails.</p>
-                    <input type="email" name="" id="" placeholder="your email">
-                    <input type="submit" name="" id="" value="subscribe">
-                    <span>follow us : <i class="fab fa-twitter"></i> <i class="fa-solid fa-wifi fa-xs"></i> <i
-                            class="fa-solid fa-basketball fa-xs"></i> <i class="fa-brands fa-behance fa-xs"></i> <i
-                            class="fa-brands fa-instagram fa-xs"></i> </span>
-                </div>
+    <div class="main-wrapper">
+        <div class="main">
+            <div class="contact">
+                <h4>Contact info</h4>
+                <ul>
+                    <li>
+                        <div>
+                            <div class="icon"><i class="fa-solid fa-house"></i></div>
+                            <span>Suite 02 Level Tropical Center</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="icon"><i class="fa-solid fa-phone-flip"></i></div>
+                            <span>+880 1234 567890, 025984712</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="icon"><i class="fa-solid fa-earth-americas"></i></div>
+                            <span>www.foodbuzz@gmail.com</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="icon"><i class="fa-solid fa-headset"></i></div>
+                            <span>support@codexcoder.com</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact2">
+                <h4>Opening Hours</h4>
+                <ul>
+                    <li>
+                        <div>
+                            <div class="icon"><i class="fa-regular fa-clock"></i></div>
+                            <span>Saterday</span>
+                        </div>
+                        <span>06:00 am - 08:00 pm</span>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="icon"><i class="fa-regular fa-clock"></i></div>
+                            <span>Sunday</span>
+                        </div>
+                        <span>09:00 am - 02:00 pm</span>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="icon"><i class="fa-regular fa-clock"></i></div>
+                            <span>Monday</span>
+                        </div>
+                        <span>07:00 am - 09:00 pm</span>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="icon"><i class="fa-regular fa-clock"></i></div>
+                            <span>Tuesday</span>
+                        </div>
+                        <span>02:00 am - 06:00 pm</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="subscribe">
+                <h3>Subscribe Newsletter</h3>
+                <p>Sign Up For Our Latest News & Articles. We Wont Give You Spam Mails.</p>
+                <input type="email" name="" id="" placeholder="your email">
+                <input type="submit" name="" id="" value="subscribe">
+                <span>follow us : <i class="fab fa-twitter"></i> <i class="fa-solid fa-wifi fa-sm"></i> <i
+                        class="fa-solid fa-basketball fa-sm"></i> <i class="fa-brands fa-behance fa-sm"></i> <i
+                        class="fa-brands fa-instagram fa-md"></i> </span>
             </div>
         </div>
-        <div class="copyright main">
-            <p>© 2020 <span style="color: black;">FoodBuzz</span> Designed by <span
-                    style="color: black;">Labartisan</span> </p>
-            <ul class="copy-r">
-                <li>Home</li>
-                <li>Food Menu</li>
-                <li>Pages</li>
-                <li>Blog</li>
-                <li>Shop</li>
-                <li>Elements</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-    </footer>
+    </div>
+    <div class="copyright main">
+        <p>© 2020 <span style="color: black;">FoodBuzz</span> Designed by <span
+                style="color: black;">Labartisan</span> </p>
+        <ul class="copy-r">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Food Menu</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Elements</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+<!-- end of footer -->
 
-    <a href="#top"><button class="top"><i class="fa-solid fa-arrow-up"></i></button></a>
 
-    <script src="./tabs.js"></script>
+<!-- top-button icon -->
+<a href="#top"><button class="top"><i class="fa-solid fa-arrow-up fa-md"></i></button></a>
+<!-- end of top-button -->
+
+
+
+    <!-- loader script -->
+    <script>
+        window.addEventListener("load",function(){
+            document.querySelector(".loading").classList.add("loaded");
+        });
+    </script>
+<!-- end of loader script -->
+
 </body>
 </html>
