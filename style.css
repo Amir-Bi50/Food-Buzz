@@ -376,6 +376,11 @@ h3 {
   text-transform: capitalize;
   /* line-height: 1.5; */
 }
+.header2-span{
+  padding-top: 0px !important;
+  font-size: 16px !important;
+  font-weight: bold;
+}
 .about-foodBuzz h3 {
   color: #d60231;
 }
@@ -494,11 +499,11 @@ h3 {
   padding: 70px 0;
 }
 .history-2 {
-  background-image: url(Images/bg-image-404.png);
+  background-image: url(Images/bg-image-404.png) !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top right;
-  /* padding: 70px 0 !important; */
+  padding: 70px 0 !important;
 }
 .history-2 .section {
   max-width: 1200px;
@@ -508,7 +513,7 @@ h3 {
 #header-3 {
   background-color: #f7f1e9;
   /* max-width: 1200px; */
-  /* padding: 100px 0; */
+  padding: 100px 0;
 }
 #header-3 h2 {
   color: black;
@@ -680,34 +685,35 @@ h3 {
   color: #444444;
   text-transform: capitalize;
   padding: 22px 22px;
-  padding-left: 50px;
+  padding-left: 58px;
   border-radius: 0px;
   font-weight: bold;
   margin: 10px;
   margin-top: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   width: 83%;
 }
-.get-dir-2-1 {
-  background-color: #d60231;
-  border-radius: 3px;
+.get-dir-2-1{
+  border: none;
   color: #fff;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 44px;
-  text-transform: capitalize;
-  /* padding-left: 50px; */
-  /* padding-right: 50px; */
+  background-color: #d60231;
+  margin: 0 auto;
+  width: 93%;
+  height: 50px;
+  border-radius: 3px;
 }
+
 .form-dir-2 {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 .form-dir-2 span {
   position: absolute;
   left: 5%;
   top: 30%;
 }
+
 #special-food {
   background-image: url(Images/product-bg.jpg);
   background-repeat: no-repeat;
@@ -2145,10 +2151,14 @@ iframe {
   }
   #header-3 h2 {
     color: black;
-    font-size: 48px;
+    font-size: 35px;
   }
   #header-3 p {
     margin: 0 auto;
+  }
+  .ops{
+    font-size: 48px !important;
+    line-height: 1.5 !important;
   }
   .day-hour > li {
     /* background-color: #c2a4a4; */
@@ -2180,6 +2190,9 @@ iframe {
   /* ////////////update header////////////////// */
   .orderAndWelcome > span {
     font-size: 30px;
+  }
+  .header2-span{
+    font-size: 16px !important;
   }
   .orderAndWelcome h2 {
     font-size: 56px;
@@ -2275,6 +2288,21 @@ footer .contact h4,
 .subscribe h3 {
   font-size: 24px;
   line-height: 24px;
+}
+.form-dir-icon{
+  font-size: 20px !important;
+  left: 2% !important;
+  top: 55% !important;
+}
+ .get-dir-2-1 {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  margin-top: 44px;
+  text-transform: capitalize;
+  font-family: myfont;
+  font-weight: bold;
+  width: 30%;
 }
 }
 @media screen and (min-width: 768px) {
@@ -2651,6 +2679,11 @@ footer .contact h4,
     .news-ad .content .best-news ul{
       justify-content: space-between;
     }
+    .day-hour {
+      margin: 0 80px;
+      margin-left: 0px;
+      margin-top: -45px;
+    }
 }
 @media screen and (min-width: 1200px) {
   #history {
@@ -2782,10 +2815,12 @@ footer .contact h4,
   #header-3 h2 {
     color: black;
     font-size: 60px;
+    text-align: left;
   }
   .get-dir-2-1 {
     right: 15px;
   }
+
   #online-table2 {
     background-color: #fffaf4 !important;
     text-align: center;
@@ -2822,15 +2857,8 @@ footer .contact h4,
   .Valuable-Client .wrapper {
     padding: 120px 0;
   }
-  .news-ad .content .best-news {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* background-color: #d60231; */
-    /* padding: 35px 10px; */
-    /* position: absolute; */
-    /* right: 0; */
+  .history-2 {
+    padding: 120px 0 !important;
   }
   .news-ad .section{
     max-width: 1200px;
