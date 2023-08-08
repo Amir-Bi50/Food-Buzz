@@ -1037,6 +1037,9 @@ p.chiken {
   background-repeat: no-repeat;
   text-align: center;
 }
+.online-t2{
+  background-color: #fffaf4 !important;
+}
 .online-table .section {
   padding-right: 15px;
   padding-left: 15px;
@@ -1048,11 +1051,17 @@ p.chiken {
   font-size: 30px;
   font-family: myfont2;
 }
+.online-t2 h3{
+  color: #d60231;
+}
 .online-table h1 {
   color: #fff;
   font-size: 30px;
   font-family: myfont;
   margin-bottom: 30px;
+}
+.online-t2 h1{
+  color: #000;
 }
 .online-table .logo-s-food img {
   margin: 10px 0 15px;
@@ -1060,6 +1069,11 @@ p.chiken {
 
 .online-table .wrapper {
   background: rgba(0, 0, 0, 0.3);
+  padding: 70px 0;
+  max-width: 100%;
+}
+.online-t2 .wrapper {
+  background: #fffaf4;
   padding: 70px 0;
   max-width: 100%;
 }
