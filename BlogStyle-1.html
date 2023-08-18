@@ -9,65 +9,65 @@
     <link rel="stylesheet" href="grids.css" />
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css" />
     <script src="jquery.js"></script>
-         <!-- menu script -->
-         <script>
-            $(function () {
-                // $("#menu ul").slideToggle();
-                $(".Btn-1").click(function () {
-                    $("#menu ul").slideToggle();
-                    // $("#cats").css("right", "-300px");
-                });
-    
-                $(".item-1").click(function () {
-                    $(".submenus-1").slideToggle();
-                    // $("#cats").css("right", "-300px");
-                });
-    
-                $(".item-2").click(function () {
-                    $(".submenus-2").slideToggle();
-                    // $("#cats").css("right", "-300px");
-                });
-    
-                $(".item-3").click(function () {
-                    $(".submenus-3").slideToggle();
-                    // $("#cats").css("right", "-300px");
-                });
-    
-                $(".item-4").click(function () {
-                    $(".submenus-4").slideToggle();
-                    // $("#cats").css("right", "-300px");
-                });
-    
-                $(".button2").click(function () {
-                    if ($("#cats").css("right") == "-300px") {
-                        $("#cats").css("right", "0");
-                        $("#header #nav").slideUp();
-                    } else {
-                        $("#cats").css("right", "-300px");
-                    }
-                });
-    
-                $("#cats .plus").click(function (event) {
-                    $(this).parent().siblings("ul").slideToggle();
-                    event.preventDefault();
-                });
-    
-                $(window).resize(function () {
-                    if ($("#cats").css("width") != "300px") {
-                        $("#cats .submenu").slideUp();
-                    }
-                });
+    <!-- menu script -->
+    <script>
+        $(function () {
+            $("#menu ul").slideToggle();
+            $(".Btn-1").click(function () {
+                $("#menu ul").slideToggle();
+                // $("#cats").css("right", "-300px");
             });
-        </script>
-        <!-- end of menu script -->
+
+            $(".item-1").click(function () {
+                $(".submenus-1").slideToggle();
+                // $("#cats").css("right", "-300px");
+            });
+
+            $(".item-2").click(function () {
+                $(".submenus-2").slideToggle();
+                // $("#cats").css("right", "-300px");
+            });
+
+            $(".item-3").click(function () {
+                $(".submenus-3").slideToggle();
+                // $("#cats").css("right", "-300px");
+            });
+
+            $(".item-4").click(function () {
+                $(".submenus-4").slideToggle();
+                // $("#cats").css("right", "-300px");
+            });
+
+            $(".button2").click(function () {
+                if ($("#cats").css("right") == "-300px") {
+                    $("#cats").css("right", "0");
+                    $("#header #nav").slideUp();
+                } else {
+                    $("#cats").css("right", "-300px");
+                }
+            });
+
+            $("#cats .plus").click(function (event) {
+                $(this).parent().siblings("ul").slideToggle();
+                event.preventDefault();
+            });
+
+            $(window).resize(function () {
+                if ($("#cats").css("width") != "300px") {
+                    $("#cats .submenu").slideUp();
+                }
+            });
+        });
+    </script>
+    <!-- end of menu script -->
 </head>
 <body>
-    <!--loader-->
-    <div class="loading">
-        <div class="">
-            <i class="fa-solid fa-spinner fa-beat-fade fa-2xl" style="color: #ffffff;"></i>
-        </div>
+<!--loader-->
+<div class="loading">
+    <div class="load1">
+        <i class="fa-solid fa-spinner fa-spin fa-2xl" style="color: #ffffff;"></i>
     </div>
+</div>
 <!--end of loader-->
 
 
@@ -76,20 +76,6 @@
 <!-- end of top-buttom-->
 
 
-<!-- top-menu -->
-<div id="top-menu">
-    <div class="row">
-        <div class="market">
-            <div class="evano">
-                <img src="Images/envatoMarket.png" alt="" />
-            </div>
-            <div class="buy-now">
-                <a href="#">Buy now</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end of top-menu -->
 
 
 <!-- menu -->
@@ -97,7 +83,7 @@
     <div class="wrapper">
         <dv class="row">
             <div class="logo">
-                <img src="Images/FoodBuzz-Icon.png" alt="" />
+                <a href="index.html"><img src="Images/FoodBuzz-Icon.png" alt="" /></a>
             </div>
             <div class="menus">
                 <ul id="menus">
@@ -140,7 +126,7 @@
             </div>
             <div class="tools">
                 <div class="tool"><i class="fa-solid fa-magnifying-glass" style="color: #696969;"></i></div>
-                <div class="tool"><i class="fa-solid fa-cart-shopping" style="color: #696969;"></i></div>
+                <div class="tool tool-icon"><span>04</span><i class="fa-solid fa-cart-shopping" style="color: #696969;"></i></div>
             </div>
         </dv>
     </div>

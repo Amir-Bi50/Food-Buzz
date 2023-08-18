@@ -16,7 +16,7 @@
     <!-- menu script -->
     <script>
         $(function () {
-            // $("#menu ul").slideToggle();
+            $("#menu ul").slideToggle();
             $(".Btn-1").click(function () {
                 $("#menu ul").slideToggle();
                 // $("#cats").css("right", "-300px");
@@ -68,11 +68,19 @@
 </head>
 
 <body>
-
+<div id="search">
+    <div class="close"><span href="#"><a href=""><i class="fa fa-close"></i></a></span></div>
+    <form action="">
+        <input type="text" placeholder="Search Here ...">
+        <button class="search-btn">
+            <span class="search-icon"><i class="fa fa-search"></i></span>
+        </button>
+    </form>
+</div>
 <!--loader-->
     <div class="loading">
-        <div class="">
-            <i class="fa-solid fa-spinner fa-beat-fade fa-2xl" style="color: #ffffff;"></i>
+        <div class="load1">
+            <i class="fa-solid fa-spinner fa-spin fa-2xl" style="color: #ffffff;"></i>
         </div>
     </div>
 <!--end of loader-->
@@ -81,20 +89,7 @@
     <span id="top"></span>
 <!-- end of top-buttom-->
 
-<!-- top-menu -->
-    <div id="top-menu">
-        <div class="row">
-            <div class="market">
-                <div class="evano">
-                    <img src="Images/envatoMarket.png" alt="" />
-                </div>
-                <div class="buy-now">
-                    <a href="#">Buy now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- end of top-menu -->
+
 
 <!-- second-menu -->
     <div class="second-menu">
@@ -122,11 +117,11 @@
         <div class="wrapper">
             <dv class="row">
                 <div class="logo">
-                    <img src="Images/FoodBuzz-Icon.png" alt="" />
+                    <a href="index.html"><img src="Images/FoodBuzz-Icon.png" alt="" /></a>
                 </div>
                 <div class="menus">
                     <ul id="menus">
-                        <li class="item"><a href="index.html">Home</a></li>
+                        <li class="item"><a href="index.html" class="active">Home</a></li>
                         <li class="item item-1">
                             <a href="#">Pages <i class="fa-solid fa-chevron-up fa-rotate-180 fa-xs"></i></a>
                             <ul class="submenus submenus-1">
@@ -164,8 +159,8 @@
                     </ul>
                 </div>
                 <div class="tools">
-                    <div class="tool"><i class="fa-solid fa-magnifying-glass" style="color: #696969;"></i></div>
-                    <div class="tool"><i class="fa-solid fa-cart-shopping" style="color: #696969;"></i></div>
+                    <div class="tool"><a href="#search"><i class="fa-solid fa-magnifying-glass" style="color: #696969;"></i></a></div>
+                    <div class="tool tool-icon"><span>04</span><i class="fa-solid fa-cart-shopping" style="color: #696969;"></i></div>
                 </div>
             </dv>
         </div>
@@ -1037,16 +1032,16 @@
                         </div>
                         <div class="col-xs-12 col-md-6">
                             <div class="form-table">
-                                <form>
+                                <form action="" method="post">
 
 
-                                    <input type="text" placeholder="Full Name*">
+                                    <input type="text" placeholder="Full Name*" id="name">
 
 
-                                    <input type="email" placeholder="Your Email*">
+                                    <input type="email" placeholder="Your Email*" id="email">
 
 
-                                    <input type="text" placeholder="Phone Number">
+                                    <input type="text" placeholder="Phone Number" id="Phone-number">
 
                                     <div class="result-t">
                                         <select class="select" name="" id="">
@@ -1078,7 +1073,7 @@
 
                                     <input type="date">
                                     <textarea name="" id="" cols="46" rows="7" placeholder="Message"></textarea>
-                                    <a href="Reservation.html" class="btn-header btn-two"><span>Book A Table</span></a>
+                                    <button type="button" class="btn-header btn-two" onclick="form1();"><span>Book A Table</span></button>
                                 </form>
                             </div>
                         </div>
@@ -1357,7 +1352,8 @@
                                     <p class="manan-name name1">manan khan</p>
                                     <p class="manan-name">Head Of Idea</p>
                                 </div>
-                                <div class="swiper-slide"><div class="User-img">
+                                <div class="swiper-slide">
+                                    <div class="User-img">
                                     <img src="Images/user-comment2.jpg" alt="" />
                                 </div>
                                 <p class="about-team">
@@ -1373,8 +1369,10 @@
                                         </span>
                                 </p>
                                 <p class="manan-name name1">Subrina Kabir</p>
-                                <p class="manan-name">Lead Desiner</p></div>
-                                <div class="swiper-slide"><div class="User-img">
+                                <p class="manan-name">Lead Desiner</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="User-img">
                                     <img src="Images/user-comment1.jpg" alt="" />
                                 </div>
                                 <p class="about-team">
@@ -1566,7 +1564,9 @@
     </script>
 <!-- end of loader script -->
 
-
+<!-- form script -->
+<script src="form.js"></script>
+<!-- end of form script -->
 </body>
 
 </html>

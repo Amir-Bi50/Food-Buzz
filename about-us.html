@@ -13,10 +13,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="jquery.js"></script>
 
-     <!-- menu script -->
-     <script>
+    <!-- menu script -->
+    <script>
         $(function () {
-            // $("#menu ul").slideToggle();
+            $("#menu ul").slideToggle();
             $(".Btn-1").click(function () {
                 $("#menu ul").slideToggle();
                 // $("#cats").css("right", "-300px");
@@ -71,11 +71,11 @@
 <body>
 
 <!--loader-->
-    <div class="loading">
-        <div class="">
-            <i class="fa-solid fa-spinner fa-beat-fade fa-2xl" style="color: #ffffff;"></i>
-        </div>
+<div class="loading">
+    <div class="load1">
+        <i class="fa-solid fa-spinner fa-spin fa-2xl" style="color: #ffffff;"></i>
     </div>
+</div>
 <!--end of loader-->
 
 
@@ -84,28 +84,13 @@
 <!-- end of top-buttom-->
 
 
-<!-- top-menu -->
-<div id="top-menu">
-    <div class="row">
-        <div class="market">
-            <div class="evano">
-                <img src="Images/envatoMarket.png" alt="" />
-            </div>
-            <div class="buy-now">
-                <a href="#">Buy now</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end of top-menu -->
-
 
 <!-- menu -->
 <div id="menu" class="menu">
     <div class="wrapper">
         <dv class="row">
             <div class="logo">
-                <img src="Images/FoodBuzz-Icon.png" alt="" />
+                <a href="index.html"><img src="Images/FoodBuzz-Icon.png" alt="" /></a>
             </div>
             <div class="menus">
                 <ul id="menus">
@@ -148,7 +133,7 @@
             </div>
             <div class="tools">
                 <div class="tool"><i class="fa-solid fa-magnifying-glass" style="color: #696969;"></i></div>
-                <div class="tool"><i class="fa-solid fa-cart-shopping" style="color: #696969;"></i></div>
+                <div class="tool tool-icon"><span>04</span><i class="fa-solid fa-cart-shopping" style="color: #696969;"></i></div>
             </div>
         </dv>
     </div>
