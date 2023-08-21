@@ -6,7 +6,7 @@
     var day = hour * 24;
     
     // اون تاریخی که قراره بهش برسیم
-    let countDown = new Date('Aug 20, 2023 00:00:00').getTime();
+    let countDown = new Date('Aug 28, 2023 00:00:00').getTime();
     
     function MyRacing() {
     let nowDate = new Date().getTime(),
